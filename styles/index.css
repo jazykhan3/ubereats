@@ -1,0 +1,63 @@
+/* styles.css */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+ font-family: sans-serif;
+
+}
+
+.custom-font {
+  
+    color: #D4D7E5;
+font-family: Martel Sans;
+font-size: 16px;
+font-weight: 400;
+line-height: 20px;
+letter-spacing: 0.5px;
+text-align: left;
+
+
+}
+
+.main-content {
+    position: relative;
+    height: 70vh;
+    background-image: url("/images/background.png");
+    background-size: cover;
+    background-position: center;
+}
+
+body.sidebar-open aside {
+    width: 256px;
+}
+
+body.sidebar-open main {
+    margin-left: 256px;
+}
+
+
+.bg-custom {
+    background-color: #EF6328;
+
+}
+.custom-margin{
+    margin-left: 150px;
+}
+.inputField{
+    width: 400px;
+    border-radius: 5px;
+    &::placeholder{
+        padding-left: 10px;
+    }
+}
+@media (max-width: 768px) {
+    .inputField {
+        height: 40px; 
+    }
+}
